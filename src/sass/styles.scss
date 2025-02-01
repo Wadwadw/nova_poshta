@@ -1,0 +1,12 @@
+@use 'base/variables';
+@use 'blocks/nav-bar';
+@use 'base/variables' as vars;
+
+* {
+    font-family: vars.$main-font;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}

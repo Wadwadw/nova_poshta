@@ -1,0 +1,104 @@
+@use "../base/variables" as vars;
+
+.navigation {
+    &__info {
+        height: 61px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main-logo {
+        max-height: 55px;
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 187px;
+        span {
+            font-weight: 500;
+            font-size: 12px;
+            color: #b8b9b9;
+        }
+    }
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        a {
+            font-weight: 500;
+            font-size: 12px;
+            color: vars.$main-color;
+            text-decoration: none;
+        }
+    }
+    &__menu {
+        display: flex;
+        width: 235px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__language {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: vars.$main-color;
+    }
+    &__login {
+        width: 60px;
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #b8b9b9;
+            text-decoration: none;
+            text-align: center;
+            img {
+                display: block;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    &__links {
+        background-color: vars.$main-color;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            a {
+                display: block;
+                font-weight: 500;
+                font-size: 16px;
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover {
+                text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+    &__privet-clients-dropdown {
+        display: none;
+        position: absolute;
+        padding: 6px 19px 23px 28px;
+        border-radius: 0 0 10px 10px;
+        width: 272px;
+        height: 363px;
+        background-color: vars.$main-color;
+        a.dropdown-link{
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    &__privet-clients-dropdown:hover {
+        display: block;
+    }
+}

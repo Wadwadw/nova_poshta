@@ -1,0 +1,9 @@
+.main-slider {
+    height: 400px;
+    &__content {
+        padding: 15px;
+        img {
+            border-radius: 20px;
+        }
+    }
+}

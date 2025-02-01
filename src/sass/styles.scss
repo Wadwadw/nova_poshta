@@ -1,6 +1,7 @@
 @use 'base/variables';
 @use 'blocks/nav-bar';
 @use 'base/variables' as vars;
+@use 'blocks/main-slider';
 
 * {
     font-family: vars.$main-font;

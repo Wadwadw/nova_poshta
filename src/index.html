@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/minireset.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Document</title>
@@ -75,13 +77,23 @@
     <section class="main-slider">
         <div class="container">
             <div class="main-slider__content">
-                <img src="img/main-slide-1.png" alt="">
+                <div class="owl-carousel">
+                    <div><img src="img/main-slider/main-slide-1.png" alt=""></div>
+                    <div><img src="img/main-slider/andrew-bezuhlyi-ww2TkvMb6j0-unsplash.jpg" alt=""></div>
+                </div>
+                <div class="custom-nav">
+                    <button class="custom-prev"><img src="img/icons/prev.png" alt=""></button>
+                    <button class="custom-next"><img src="img/icons/next.png" alt=""></button>
+                </div>
             </div>
             <div class="main-slider__search">
 
             </div>
         </div>
     </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script> 
 </body>
 
 </html>

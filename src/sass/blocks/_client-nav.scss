@@ -1,0 +1,63 @@
+@use 'base/variables' as vars;
+
+.client-nav {
+    margin-top: 15px;
+    height: 111px;
+    position: relative;
+    &__red-row {
+        width: 100%;
+        height: 43px;
+        background-color: vars.$main-color;
+    }
+    &__content {
+        margin-top: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: -43px;
+        padding-bottom: 30px;
+    }
+    &__button {
+        border-radius: 10px;
+        width: 188px;
+        height: 94px;
+        box-shadow: 2px 0 10px 0 rgba(186, 187, 187, 0.2), 0 1px 10px 0 rgba(186, 187, 187, 0.2), -2px 0 10px 0 rgba(186, 187, 187, 0.2);
+        background: #fff;
+        position: relative;
+        transition: transform 0.3s ease-out;
+        margin-bottom: -30px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            bottom: -30px;
+            left: 0;
+            background: transparent;
+            opacity: 0;
+            visibility: hidden;
+        }
+        img {
+            margin-top: 15px;
+            display: flex;
+            justify-self: center;
+        }
+        span {
+            margin-top: 6px;
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: #b8b9b9;
+            text-align: center;
+        }
+    }
+    &__button:hover {
+        transform: translateY(-30px);
+        cursor: pointer;
+        &::after {
+            opacity: 1; // Делаем видимым
+            visibility: visible; // Добавляем в DOM
+        }
+    }
+}

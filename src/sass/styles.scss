@@ -2,6 +2,7 @@
 @use 'blocks/nav-bar';
 @use 'base/variables' as vars;
 @use 'blocks/main-slider';
+@use 'blocks/client-nav';
 
 * {
     font-family: vars.$main-font;

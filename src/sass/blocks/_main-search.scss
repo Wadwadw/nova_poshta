@@ -1,0 +1,38 @@
+@use 'base/variables' as vars;
+
+.main-search {
+    height: 171px;
+    form {
+        display: flex;
+        margin-top: 65px;
+        input {
+            width: 824px;
+            height: 50px;
+            border: 1px solid vars.$main-color;
+            border-radius: 20px 0 0 20px;
+            padding-left: 62px;
+        }
+
+        button {
+            height: 50px;
+            border: none;
+            color: #fff;
+            background-color: vars.$main-color;
+            width: 196px;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+    }
+    &__input {
+        position: relative;
+        img {
+            position: absolute;
+            left: 36px;
+            top: 16px;
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+}

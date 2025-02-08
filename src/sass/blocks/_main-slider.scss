@@ -35,11 +35,11 @@
     .custom-nav {
         position: relative;
     }
-    .custom-prev {
+    &__custom-prev {
         position: absolute;
         padding: 0;
         border: none;
-        background-color: rgba($color: #ffffff94, $alpha: 0.5);
+        background-color: #ffffff00;
         top: -240px;
         left: 20px;
         z-index: 1;
@@ -49,11 +49,11 @@
             
         }
     }
-    .custom-next{
+    &__custom-next{
         position: absolute;
         padding: 0;
         border: none;
-        background-color: rgba($color: #ffffff94, $alpha: 0.5);
+        background-color: #ffffff00;
         top: -240px;
         left: 965px;
         z-index: 1;

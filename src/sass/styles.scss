@@ -4,6 +4,7 @@
 @use 'blocks/main-slider';
 @use 'blocks/client-nav';
 @use 'blocks/main-search';
+@use 'blocks/news';
 
 * {
     font-family: vars.$main-font;
@@ -12,4 +13,5 @@
 .container {
     width: 1020px;
     margin: 0 auto;
+    position: relative;
 }

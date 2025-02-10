@@ -1,0 +1,63 @@
+@use 'base/variables' as vars;
+
+.possibilities {
+    margin-top: 53px;
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        color: vars.$main-color;
+    }
+    &__wrapper {
+        margin-top: 39px;
+        display: flex;
+        column-gap: 124px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    &__info {
+        h3 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #5f6060;
+        }
+        p {
+            margin-top: 37px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #5f6060;
+        }
+        ul {
+            margin-left: 22px;
+            list-style-type:disc;
+            font-weight: 400;
+            font-size: 14px;
+            color: #5f6060;
+        }
+    }
+    &__buttons {
+        margin-top: 75px;
+        display: flex;
+        column-gap: 19px;
+        button:first-child {
+            border-radius: 6px;
+            border: none;
+            width: 140px;
+            height: 39px;
+            background-color: vars.$main-color;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+        }
+        button:nth-child(2) {
+            border-radius: 6px;
+            border: 1px solid vars.$main-color;
+            width: 150px;
+            height: 39px;
+            background-color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            color: #5f6060;
+        }
+    }
+}

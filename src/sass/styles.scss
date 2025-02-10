@@ -5,6 +5,7 @@
 @use 'blocks/client-nav';
 @use 'blocks/main-search';
 @use 'blocks/news';
+@use 'blocks/possibilities';
 
 * {
     font-family: vars.$main-font;

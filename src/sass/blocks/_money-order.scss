@@ -1,0 +1,39 @@
+@use 'base/variables' as vars;
+
+.money-order {
+    height: 250px;
+    margin-top: 45px;
+    background-image: url(../img/money-order-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    &__wrapper {
+        padding-top: 59px;
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        h2 {
+            font-weight: 700;
+            font-size: 46px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            color: #fff;
+        }
+        button {
+            margin-top: 45px;
+            width: 160px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: vars.$main-color;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+}

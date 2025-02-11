@@ -36,5 +36,20 @@ $(document).ready(function(){
     $(".news__custom-next").click(function() {
         $(".owl-carousel").trigger("next.owl.carousel");
     });
+    $(".partners__owl-carousel").owlCarousel({
+        margin: 19,
+        loop: true,
+        dots: true,
+        nav: false,
+        items: 5,
+        stagePadding: 10,
+    });
+    $(".partners__custom-prev").click(function() {
+        $(".owl-carousel").trigger("prev.owl.carousel");
+    });
+
+    $(".partners__custom-next").click(function() {
+        $(".owl-carousel").trigger("next.owl.carousel");
+    });
   });
 

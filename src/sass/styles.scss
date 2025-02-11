@@ -6,6 +6,8 @@
 @use 'blocks/main-search';
 @use 'blocks/news';
 @use 'blocks/possibilities';
+@use 'blocks/partners';
+@use 'blocks/money-order';
 
 * {
     font-family: vars.$main-font;

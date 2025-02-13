@@ -10,6 +10,7 @@
 @use 'blocks/money-order';
 @use 'blocks/reviews';
 @use 'blocks/online-services';
+@use 'blocks/footer';
 
 * {
     font-family: vars.$main-font;

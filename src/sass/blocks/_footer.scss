@@ -1,0 +1,109 @@
+@use '../base/variables' as vars;
+
+.footer {
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__links {
+        margin-top: 34px;
+        h4 {
+            font-weight: 600;
+            font-size: 14px;
+            color: vars.$main-color;
+        }
+        ul {
+            margin-top: 14px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            li {
+                
+                
+                a {
+                    font-weight: 400;
+                    font-size: 12px;
+                    text-decoration: none;
+                    color: #5f6060;
+                }
+            }
+        }
+    }
+    &__contacts {
+        margin-top: 39px;
+        padding-top: 39px;
+        background-color: vars.$main-color;
+        height: 212px;
+        width: 100vw;
+    }
+    &__contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contact-phones {
+        max-width: 309px;
+        h4 {
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+    &__phones {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            display: block;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__social-media {
+        margin-left: 145px;
+        max-width: 201px;
+        h4 {
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+        }
+        ul {
+            margin-top: 15px;
+            display: flex;
+            column-gap: 22px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        h5 {
+            margin-top: 41px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    &__mobile-apps {
+        margin-left: 190px;
+        max-width: 187px;
+        h4 {
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+    &__mobile-logo {
+        margin-top: 17px;
+        display: flex;
+        column-gap: 15px;
+        img {
+            display: block;
+            width: 86px;
+            height: 25px;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@use '../base/variables' as vars;
+
+.online-services {
+    margin-top: 55px;
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        color: vars.$main-color;
+    }
+
+    h4 {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+    }
+    &__wrapper {
+        background-color: vars.$main-color;
+        width: 1191px;
+        height: 485px;
+        background-position: center;
+        display: flex;
+        height: 485px;
+        position: relative;
+        img {
+            position: relative;
+            left: -175px;
+            width: 590px;
+            height: 100%;
+        }
+    }
+    &__info {
+        margin-top: 33px;
+        position: relative;
+        max-width: 499px;
+        left: -73px;
+        h3 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+        }
+        ul {
+            margin-top: 32px;
+            list-style-type: disc;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            position: relative;
+            left: 24px;
+            li {
+                font-weight: 500;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+    }
+    &__app-links {
+        margin-top: 42px;
+        display: flex;
+        margin-left: 174px;
+        a {
+            img {
+                width: 158px;
+                height: 45px;
+            }
+        }
+    }
+}

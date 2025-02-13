@@ -1,0 +1,93 @@
+@use '../base/variables' as vars;
+
+
+
+.reviews {
+    margin-top: 60px;
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        color: vars.$main-color;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        column-gap: 45px;
+    }
+    &__item {
+        border-radius: 10px;
+        box-shadow: 2px 4px 10px 0 rgba(186, 187, 187, 0.2), 0 1px 10px 0 rgba(186, 187, 187, 0.2), -2px 0 10px 0 rgba(186, 187, 187, 0.2);
+        width: 310px;
+        min-height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__photo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 126px;
+        background-color: vars.$main-color;
+        img {
+            margin-top: 13px;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+            margin-top: 14px;
+        }
+    }
+    &__date {
+        margin-top: 7px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+    }
+    &__rating {
+        margin-top: 15px;
+        .fa-star {
+            color: #B8B9B9;
+        }
+        .checked {
+            color: vars.$main-color;
+        }
+    }
+    &__desc {
+        padding: 0  25px 0 25px;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+        a {
+            color: vars.$main-color;
+        }
+    }
+    &__more {
+        display: block;
+        margin-top: 38px;
+        justify-self: center;
+        font-weight: 400;
+        font-size: 16px;
+        color: #5f6060;
+        border-radius: 10px;
+        width: 160px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid;
+        border-color: vars.$main-color;
+    }
+
+}
+

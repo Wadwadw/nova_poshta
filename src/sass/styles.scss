@@ -8,6 +8,8 @@
 @use 'blocks/possibilities';
 @use 'blocks/partners';
 @use 'blocks/money-order';
+@use 'blocks/reviews';
+@use 'blocks/online-services';
 
 * {
     font-family: vars.$main-font;
@@ -17,4 +19,11 @@
     width: 1020px;
     margin: 0 auto;
     position: relative;
+}
+
+.footer-line {
+    margin-top: 80px;
+    height: 10px;
+    width: 100%;
+    background-color: vars.$main-color;
 }

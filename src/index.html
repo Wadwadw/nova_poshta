@@ -401,8 +401,8 @@
             </div>
             <div class="sign-in__body">
                 <div class="tabs">
-                    <button class="tabs__login">Вхід</button>
-                    <button class="tabs__signin">Реєcтрація</button>
+                    <button class="tab ">Реєcтрація</button>
+                    <button class="tab tab_active">Вхід</button>
                 </div>
                 <div class="content content_active">
                     <form action="">
@@ -410,23 +410,21 @@
                         <input type="text" placeholder="Ім’я">
                         <input type="text" placeholder="По-батькові">
                         <input type="text" placeholder="Номер телефону або E-mail ">
+                        <button class="next">Далі</button>
+                        <div class="policy"><input type="checkbox" name="policy" id="policy">
+                            <div>З <a href="">Політикою конфіденційності</a> та з умовами програми <a href="">«Збільшуй можливості»</a> ознайомлений. Надаю згоду на обробку моїх персональних даних відповідно до <a href="">Політики конфіденційності</a>.</div></div>
+                            
                     </form>
                 </div>
                 <div class="content ">
                     <form action="">
-                        <input type="text" placeholder="Місто">
-                        <input type="text" placeholder="Відділення">
+                        <input type="text" placeholder="Логін">
+                        <input type="text" placeholder="Пароль">
+                        <button class="next" type="submit">Вхід</button>
                     </form>
                 </div>
-                <div class="pagination">
-                    <button class="pagination__button pagination__button_active">1</button>
-                    <button class="pagination__button">2</button>
-                </div>
-                <button class="next">Далі</button>
-                <form class="policy" action="">
-                        <input type="checkbox" name="policy" id="policy">
-                        <div>З <a href="">Політикою конфіденційності</a> та з умовами програми <a href="">«Збільшуй можливості»</a> ознайомлений. Надаю згоду на обробку моїх персональних даних відповідно до <a href="">Політики конфіденційності</a>.</div>
-                </form>                
+                
+                               
             </div>
         </div>
     </div>

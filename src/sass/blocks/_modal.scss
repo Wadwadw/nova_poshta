@@ -59,38 +59,27 @@
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            &__login {
-                border: 1px solid vars.$main-color;
-                border-radius: 10px 0 0 10px;
-                width: 137px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid vars.$main-color;
+            .tab {
+                border: none;
+                width: 147px;
                 height: 35px;
                 background-color: #fff;
                 font-weight: 400;
                 font-size: 14px;
                 color: #a6a6a6;
-            }
-            &__signin {
-                background-color: vars.$main-color;
-                border: none;
-                border-radius: 0 10px 10px 0;
-                width: 157px;
-                height: 35px;
-                font-weight: 500;
-                font-size: 16px;
-                color: #fff;
+                cursor: pointer;
+                &_active {
+                    background-color: vars.$main-color;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #fff;
+                }
             }
         }
-        button.next {
-            margin-top: 25px;
-            justify-self: center;
-            border-radius: 10px;
-            border: none;
-            width: 120px;
-            height: 35px;
-            background-color: vars.$main-color;
-            color: #fff;
-            cursor: pointer;
-        }
+        
         .content {
             display: none;
             form {
@@ -106,6 +95,41 @@
                     border-radius: 10px;
                     border: 1px solid vars.$main-color;
                     padding-left: 18px;
+                }
+            }
+            button.next {
+                margin-top: 5px;
+                justify-self: center;
+                border-radius: 10px;
+                border: none;
+                width: 120px;
+                height: 35px;
+                background-color: vars.$main-color;
+                color: #fff;
+                cursor: pointer;
+            }
+            .policy {
+                margin-top: 23px;
+                display: flex;
+                align-items: start;
+                padding-left: 114px;
+                padding-right: 114px;
+                div {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 10px;
+                    color: #5f6060;
+                    a {
+                        text-decoration: none;
+                        color: vars.$main-color;
+                    }
+                }
+                input {
+                    width: 10px;
+                    height: 10px;
+                    position: relative;
+                    left: -10px;
+                    border: 1px solid vars.$main-color;
                 }
             }
             &_active {
@@ -133,27 +157,6 @@
                 }
             }
         }
-        .policy {
-            margin-top: 23px;
-            display: flex;
-            align-items: start;
-            padding-left: 114px;
-            padding-right: 114px;
-            div {
-                font-family: var(--font-family);
-                font-weight: 400;
-                font-size: 10px;
-                color: #5f6060;
-                a {
-                    text-decoration: none;
-                    color: vars.$main-color;
-                }
-            }
-            input {
-                position: relative;
-                left: -10px;
-                border: 1px solid vars.$main-color;
-            }
-        }
+        
     }
 }

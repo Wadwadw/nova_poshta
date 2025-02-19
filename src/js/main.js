@@ -55,5 +55,11 @@ $(document).ready(function(){
     $(".close").on("click", function() {
         $(".sign-in, .overlay").fadeOut();
       });
+
+    $('div.tabs').on('click', 'button:not(.tab_active)', function() {
+        $(this)
+        .addClass('tab_active').siblings().removeClass('tab_active')
+        .closest('div.sign-in__body').find('div.content').removeClass('content_active').eq($(this).index()).addClass('content_active');
+    });
   });
 

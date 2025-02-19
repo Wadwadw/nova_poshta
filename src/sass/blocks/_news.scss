@@ -16,7 +16,6 @@
     }
     &__item {
         width: 100%;
-        max-width: 291px;
         height: 293px;
     }
     &__img {
@@ -38,10 +37,6 @@
         line-height: 150%;
         color: vars.$main-color;
     }
-
-    // &__custom-nav {
-    //     position: relative;
-    // }
 
     &__custom-prev {
         position: absolute;

@@ -17,10 +17,9 @@
     &__wrapper {
         background-color: vars.$main-color;
         width: 1191px;
-        height: 485px;
+        min-height: 485px;
         background-position: center;
         display: flex;
-        height: 485px;
         position: relative;
         img {
             position: relative;

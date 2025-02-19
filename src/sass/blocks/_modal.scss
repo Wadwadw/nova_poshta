@@ -1,0 +1,159 @@
+@use '../base/variables' as vars;
+
+.overlay {
+    display: none;
+    background-color: rgba(0,0,0, 0.56);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+}
+.sign-in {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 603px;
+    max-height: 585px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    // padding: 27px 102px 20px 102px;
+    &__header {
+        height: 120px;
+        background-color: vars.$main-color;
+        h2 {
+            padding-top: 27px;
+            padding-left: 102px;
+            padding-right: 102px;
+            font-weight: 700;
+            font-size: 28px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        h3 {
+            margin-top: 12px;
+            padding-left: 102px;
+            padding-right: 102px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #fff;
+        }
+        .close {
+            color: #fff;
+            font-size: 40px;
+            position: absolute;
+            right: 10px;
+            top: -5px;
+            cursor: pointer;
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tabs {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            &__login {
+                border: 1px solid vars.$main-color;
+                border-radius: 10px 0 0 10px;
+                width: 137px;
+                height: 35px;
+                background-color: #fff;
+                font-weight: 400;
+                font-size: 14px;
+                color: #a6a6a6;
+            }
+            &__signin {
+                background-color: vars.$main-color;
+                border: none;
+                border-radius: 0 10px 10px 0;
+                width: 157px;
+                height: 35px;
+                font-weight: 500;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+        button.next {
+            margin-top: 25px;
+            justify-self: center;
+            border-radius: 10px;
+            border: none;
+            width: 120px;
+            height: 35px;
+            background-color: vars.$main-color;
+            color: #fff;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                row-gap: 20px;
+                input {
+                    border-radius: 10px;
+                    width: 291px;
+                    height: 35px;
+                    border-radius: 10px;
+                    border: 1px solid vars.$main-color;
+                    padding-left: 18px;
+                }
+            }
+            &_active {
+                display: block;
+            }
+        }
+        .pagination {
+            margin-top: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 9px;
+            &__button {
+                border-radius: 100%;
+                border: none;
+                background-color: #b8b9b9;
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                &_active {
+                    background-color: vars.$main-color;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .policy {
+            margin-top: 23px;
+            display: flex;
+            align-items: start;
+            padding-left: 114px;
+            padding-right: 114px;
+            div {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 10px;
+                color: #5f6060;
+                a {
+                    text-decoration: none;
+                    color: vars.$main-color;
+                }
+            }
+            input {
+                position: relative;
+                left: -10px;
+                border: 1px solid vars.$main-color;
+            }
+        }
+    }
+}

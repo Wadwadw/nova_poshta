@@ -23,11 +23,6 @@ $(document).ready(function(){
         dots: true,
         nav: false,
         items: 3,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 3 }
-        },
     });
     $(".news__custom-prev").click(function() {
         $(".owl-carousel").trigger("prev.owl.carousel");
@@ -51,5 +46,14 @@ $(document).ready(function(){
     $(".partners__custom-next").click(function() {
         $(".owl-carousel").trigger("next.owl.carousel");
     });
+
+    //Modal
+    $(".navigation__login").on("click", function() {
+        $(".sign-in, .overlay").fadeIn()
+    })
+
+    $(".close").on("click", function() {
+        $(".sign-in, .overlay").fadeOut();
+      });
   });
 

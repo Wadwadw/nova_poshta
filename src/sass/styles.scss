@@ -11,6 +11,7 @@
 @use 'blocks/reviews';
 @use 'blocks/online-services';
 @use 'blocks/footer';
+@use 'blocks/modal';
 
 * {
     font-family: vars.$main-font;

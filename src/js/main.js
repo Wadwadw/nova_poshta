@@ -23,6 +23,18 @@ $(document).ready(function(){
         dots: true,
         nav: false,
         items: 3,
+        responsive: {
+            400: {
+                items: 1
+            },
+            800: {
+                items: 2,
+                margin: 0,
+            },
+            1100: {
+                items: 3,
+            }
+        }
     });
     $(".news__custom-prev").click(function() {
         $(".owl-carousel").trigger("prev.owl.carousel");
@@ -38,6 +50,24 @@ $(document).ready(function(){
         nav: false,
         items: 5,
         stagePadding: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            400: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            800: {
+                items: 4,
+                
+            },
+            1100: {
+                items: 5,
+            }
+        }
     });
     $(".partners__custom-prev").click(function() {
         $(".owl-carousel").trigger("prev.owl.carousel");

@@ -80,16 +80,21 @@ $(document).ready(function(){
     //Modal
     $(".navigation__login").on("click", function() {
         $(".sign-in, .overlay").fadeIn()
-    })
+    });
 
     $(".close").on("click", function() {
-        $(".sign-in, .overlay").fadeOut();
-      });
-
+        $(".sign-in, .overlay, .burger").fadeOut();
+    });
     $('div.tabs').on('click', 'button:not(.tab_active)', function() {
         $(this)
         .addClass('tab_active').siblings().removeClass('tab_active')
         .closest('div.sign-in__body').find('div.content').removeClass('content_active').eq($(this).index()).addClass('content_active');
+    });
+
+    //Burger
+
+    $(".navigation__burger").on("click", function() {
+        $(".burger, .overlay").fadeIn();
     });
   });
 

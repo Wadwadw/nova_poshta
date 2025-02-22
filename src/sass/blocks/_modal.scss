@@ -2,7 +2,7 @@
 
 .overlay {
     display: none;
-    background-color: rgba(0,0,0, 0.56);
+    background-color: rgba(0,0,0, 0.5);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -21,7 +21,7 @@
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    // padding: 27px 102px 20px 102px;
+    z-index: 2;
     &__header {
         height: 120px;
         background-color: vars.$main-color;
@@ -158,5 +158,82 @@
             }
         }
         
+    }
+}
+
+.burger {
+    display: none;
+    width: 465px;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 0 0 0 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-bottom: 14px;
+    overflow: auto;
+    transition: max-height 0.3s ease-in-out;
+    .close {
+        position: absolute;
+        top: 14px;
+        right: 32px;
+        font-size: 35px;
+        color: #5F6060;
+        cursor: pointer;
+    }
+    &__wrapper {
+        margin-top: 74px;
+        min-height: 439px;
+        // overflow: hidden;
+    }
+    &__main-menu {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+    }
+    &__main-link {
+        font-weight: 500;
+        font-size: 18px;
+        color: vars.$main-color;
+        position: relative;
+        cursor: pointer;
+        summary {
+            list-style: none;
+        }
+        &::before {
+            content: "";
+            background: url("../img/icons/dashicons_arrow-left-alt2.svg");
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 186px;
+        }
+    }
+    &__submenu {
+        margin-top: 19px;
+        margin-left: 7px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 19px;
+    }
+    &__sublink {
+        font-weight: 400;
+        font-size: 14px;
+        color: vars.$main-color;
+    }
+    &__social {
+        display: flex;
+        margin-top: 27px;
+        margin-left: 19px;
+        width: 261px;
+        justify-content: space-between;
+    }
+    &__licence {
+        margin-left: 19px;
+        margin-top: 17px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #5f6060;
     }
 }

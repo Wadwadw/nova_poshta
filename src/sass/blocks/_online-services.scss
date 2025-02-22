@@ -16,26 +16,23 @@
     }
     &__wrapper {
         background-color: vars.$main-color;
-        width: 1191px;
         min-height: 485px;
         background-position: center;
         display: flex;
         position: relative;
+        overflow: hidden;
         img {
             position: relative;
-            left: -175px;
-            width: 590px;
-            height: 100%;
+            left: -75px;
         }
     }
     &__info {
         margin-top: 33px;
         position: relative;
-        max-width: 499px;
-        left: -73px;
+        max-width: 400px;
         h3 {
             font-weight: 700;
-            font-size: 24px;
+            font-size: 20px;
             color: #fff;
         }
         ul {
@@ -43,7 +40,7 @@
             list-style-type: disc;
             display: flex;
             flex-direction: column;
-            row-gap: 16px;
+            row-gap: 12px;
             position: relative;
             left: 24px;
             li {
@@ -56,7 +53,7 @@
     &__app-links {
         margin-top: 42px;
         display: flex;
-        margin-left: 174px;
+        margin-left: 74px;
         a {
             img {
                 width: 158px;

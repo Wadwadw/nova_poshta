@@ -37,3 +37,13 @@
     }
 
 }
+
+@media screen and (max-width: 1100px) {
+    .main-search {
+        form {
+            input {
+                width: 650px;
+            }
+        }
+    }
+}

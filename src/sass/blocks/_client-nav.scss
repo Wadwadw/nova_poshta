@@ -62,3 +62,15 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .client-nav {
+        &__button {
+            width: 130px;
+            height: 80px;
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}

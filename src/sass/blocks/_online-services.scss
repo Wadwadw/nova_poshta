@@ -62,3 +62,31 @@
         }
     }
 }
+
+@media screen and (max-width:1100px) {
+    .online-services {
+        &__wrapper {
+            flex-direction: column;
+            img {
+                object-fit: contain;
+                left: 0;
+            }
+        }
+        &__info {
+            align-self: center;
+            margin-left: 30px;
+            h3 {
+                font-size: 36px;
+            }
+            ul {
+                li {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__app-links {
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+    }
+}

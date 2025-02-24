@@ -62,7 +62,6 @@
         }
     }
     &__social-media {
-        margin-left: 145px;
         max-width: 201px;
         h4 {
             font-weight: 500;
@@ -88,7 +87,7 @@
     }
 
     &__mobile-apps {
-        margin-left: 190px;
+        // margin-left: 190px;
         max-width: 187px;
         h4 {
             font-weight: 500;
@@ -104,6 +103,14 @@
             display: block;
             width: 86px;
             height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    footer {
+        &__mobile-apps {
+            
         }
     }
 }

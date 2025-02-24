@@ -56,9 +56,11 @@
             max-width: 800px;
         }
         &__custom-prev {
+            display: none;
             left: 20px;
         }
         &__custom-next {
+            display: none;
             left: 950px;
         }
     }

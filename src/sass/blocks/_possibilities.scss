@@ -62,3 +62,41 @@
         }
     }
 }
+
+@media screen and (max-width:1100px) {
+    .possibilities {
+        &__wrapper {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+        }
+        &__info {
+            h3 {
+                margin-top: 20px;
+                font-size: 40px;
+            }
+            p {
+                font-size: 22px;
+            }
+            ul {
+                font-size: 22px;
+            }
+        }
+        &__buttons {
+            margin-top: 75px;
+            display: flex;
+            justify-content: space-around;
+            button:first-child {
+                width: 280px;
+                height: 60px;
+                font-size: 22px;
+            }
+            button:nth-child(2) {
+                width: 300px;
+                height: 60px;
+                font-size: 22px;
+            }
+        }
+    }
+}

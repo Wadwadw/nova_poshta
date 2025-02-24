@@ -9,6 +9,19 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause: true,
         smartSpeed: 1500,
+        responsive: {
+            400: {
+                dots: false,
+                nav: false
+            },
+            800: {
+                dots: false,
+                nav: false
+            },
+            1100: {
+                
+            }
+        }
     });
     $(".main-slider__custom-prev").click(function() {
         $(".owl-carousel").trigger("prev.owl.carousel");
@@ -25,11 +38,12 @@ $(document).ready(function(){
         items: 3,
         responsive: {
             400: {
-                items: 1
+                items: 1,
+                margin: 40
             },
             800: {
                 items: 2,
-                margin: 0,
+                margin: 40,
             },
             1100: {
                 items: 3,
@@ -61,7 +75,8 @@ $(document).ready(function(){
                 items: 3
             },
             800: {
-                items: 4,
+                items: 3,
+                margin: 30
                 
             },
             1100: {
